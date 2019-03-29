@@ -1,0 +1,40 @@
+// Callout
+.callout {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/bg-callout.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+    max-width: 30rem;
+  }
+}
+
+.work-with-common {
+  a.font-weight-bold {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+  .work-with {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+  }
+
+  small {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .main-text {
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 41px 0;
+  }
+}

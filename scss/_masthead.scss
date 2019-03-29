@@ -1,0 +1,19 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 2.6vw;
+  @include breakpoint-xs() {
+    padding-top: 32px;
+  }
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+}

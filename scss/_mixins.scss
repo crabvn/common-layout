@@ -1,0 +1,30 @@
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Font Mixins
+@mixin body-font {
+  font-family: 'Roboto';
+}
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-xs() {
+  @media screen and(max-width: $mobile) {
+    @content;
+  }
+}
+
+// Font Mixins
+@mixin roboto-font {
+  font-family: 'Roboto';
+}
