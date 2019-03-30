@@ -1,141 +1,143 @@
-section.common-section {
-  margin-left: 16.3vw;
-  margin-right: 14.3vw;
-  padding-top: 13.3vw;
-  padding-bottom: 10vw;
+section {
+  &.common-section {
+    margin-left: 16.3vw;
+    margin-right: 14.3vw;
+    padding-top: 13.3vw;
+    padding-bottom: 10vw;
 
-  @include breakpoint-xs() {
-    margin: 0;
-    padding: 50px 0;
-  }
-
-  .small-circle {
-    left: 29.17vw;
     @include breakpoint-xs() {
-      display: none;
+      margin: 0;
+      padding: 50px 0;
     }
-  }
 
-  .step {
-    line-height: 40px;
-    display: block;
-    margin-top: 30px;
-    @include breakpoint-xs() {
-      margin-top: 0;
-      margin-bottom: 15px;
+    .small-circle {
+      left: 29.17vw;
+      @include breakpoint-xs() {
+        display: none;
+      }
     }
-  }
 
-  .left-zone {
-    @include breakpoint-xs() {
-      padding: 0;
+    .step {
+      line-height: 40px;
+      display: block;
+      margin-top: 30px;
+      @include breakpoint-xs() {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
     }
-  }
 
-  .center-zone {
-    padding: 0 4.7vw;
-    @include breakpoint-xs() {
-      padding: 0;
+    .left-zone {
+      @include breakpoint-xs() {
+        padding: 0;
+      }
     }
-  }
 
-  .main-text {
-    font-weight: 400;
+    .center-zone {
+      padding: 0 4.7vw;
+      @include breakpoint-xs() {
+        padding: 0;
+      }
+    }
 
-    &.with-comma {
+    .main-text {
+      font-weight: 400;
+
+      &.with-comma {
+        @include breakpoint($not-small) {
+          &:before {
+            content: url("../img/homepage/open-quote@2x.png");
+            top: -40px;
+            position: absolute;
+            left: -30px;
+          }
+
+          &:after {
+            content: url("../img/homepage/close-quote@2x.png");
+            bottom: -20px;
+            position: absolute;
+          }
+        }
+      }
+
+      &.smaller {
+        font-size: 2.6vw;
+        line-height: 3.1vw;
+        @include breakpoint-xs() {
+          font-size: 32px;
+          line-height: 55px;
+        }
+      }
+    }
+
+    small, .more-detail, .more-trend {
+      font-style: italic;
+      display: block;
+    }
+
+    .more-detail {
+      bottom: 40px;
+      left: -20px;
+      max-width: 40px;
+    }
+
+    .more-trend {
+      bottom: 40px;
+      left: -20px;
+      max-width: 40px;
+      @include breakpoint-xs() {
+        display: none;
+      }
       @include breakpoint($not-small) {
         &:before {
-          content: url("../img/homepage/open-quote@2x.png");
-          top: -40px;
+          content: url("../img/homepage/undo.png");
           position: absolute;
-          left: -30px;
-        }
-
-        &:after {
-          content: url("../img/homepage/close-quote@2x.png");
+          left: 130px;
           bottom: -20px;
-          position: absolute;
+        }
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 120px;
+          height: 2px;
+          background-color: $black;
         }
       }
     }
 
-    &.smaller {
-      font-size: 2.6vw;
-      line-height: 3.1vw;
-      @include breakpoint-xs() {
-        font-size: 32px;
-        line-height: 55px;
-      }
+    .author {
+      font-size: 18px;
+      font-weight: 100;
+      font-style: italic;
+      padding-right: 44px;
+      padding-top: 20px;
     }
-  }
 
-  small, .more-detail, .more-trend {
-    font-style: italic;
-    display: block;
-  }
-
-  .more-detail {
-    bottom: 40px;
-    left: -20px;
-    max-width: 40px;
-  }
-
-  .more-trend {
-    bottom: 40px;
-    left: -20px;
-    max-width: 40px;
-    @include breakpoint-xs() {
-      display: none;
-    }
-    @include breakpoint($not-small) {
-      &:before {
-        content: url("../img/homepage/undo.png");
-        position: absolute;
-        left: 130px;
-        bottom: -20px;
-      }
+    .scroll-down {
+      display: block;
+      margin-top: 3vw;
+      font-size: 0;
       &:after {
-        content: "";
-        display: inline-block;
-        width: 120px;
-        height: 2px;
-        background-color: $black;
+        content: url("../img/homepage/scroll-down-btn@2x.png")
+      }
+
+      @media screen and (min-width: 1600px) {
+        margin-top: 6vw;
+      }
+
+      @include breakpoint-xs() {
+        margin-top: 20px;
       }
     }
-  }
 
-  .author {
-    font-size: 18px;
-    font-weight: 100;
-    font-style: italic;
-    padding-right: 44px;
-    padding-top: 20px;
-  }
-
-  .scroll-down {
-    display: block;
-    margin-top: 3vw;
-    font-size: 0;
-    &:after {
-      content: url("../img/homepage/scroll-down-btn@2x.png")
-    }
-
-    @media screen and (min-width: 1600px) {
-      margin-top: 6vw;
-    }
-
-    @include breakpoint-xs() {
-      margin-top: 20px;
-    }
-  }
-
-  .more-detail-img {
-    margin-top: 7vw;
-    display: block;
-    max-width: 10vw;
-    @include breakpoint-xs() {
-      margin-top: 30px;
-      max-width: 130px;
+    .more-detail-img {
+      margin-top: 7vw;
+      display: block;
+      max-width: 10vw;
+      @include breakpoint-xs() {
+        margin-top: 30px;
+        max-width: 130px;
+      }
     }
   }
 }

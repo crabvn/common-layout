@@ -111,7 +111,24 @@ h6 {
 }
 
 .lh35 {
-  line-height: 35px;
+  line-height: 1.8vw;
+  @include breakpoint-xs() {
+    line-height: 24px;
+  }
+}
+
+.lh130 {
+  line-height: 6.8vw;
+  @include breakpoint-xs() {
+    line-height: 68px;
+  }
+}
+
+.fs20 {
+  font-size: 1vw;
+  @include breakpoint-xs() {
+    font-size: 1rem;
+  }
 }
 
 .fs72 {
@@ -119,6 +136,13 @@ h6 {
   font-size: 3.75vw;
   @include breakpoint-xs() {
     font-size: 40px;
+  }
+}
+
+.fs200 {
+  font-size: 10.4vw;
+  @include breakpoint-xs() {
+    font-size: 120px;
   }
 }
 
@@ -194,6 +218,23 @@ h6 {
 
 .db-ib {
   display: inline-block;
+}
+
+.fs150 {
+  font-size: 7.8vw;
+  @include breakpoint-xs() {
+    font-size: 72px;
+  }
+}
+
+.mw-80 {
+  max-width: 80%;
+}
+
+@include breakpoint($large) {
+  .offset-lg-72 {
+    margin-left: 3.75vw;
+  }
 }
 
 .homepage {

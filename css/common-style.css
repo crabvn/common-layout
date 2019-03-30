@@ -106,7 +106,33 @@ h6 {
 }
 
 .lh35 {
-  line-height: 35px;
+  line-height: 1.8vw;
+}
+
+@media screen and (max-width: 479px) {
+  .lh35 {
+    line-height: 24px;
+  }
+}
+
+.lh130 {
+  line-height: 6.8vw;
+}
+
+@media screen and (max-width: 479px) {
+  .lh130 {
+    line-height: 68px;
+  }
+}
+
+.fs20 {
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 479px) {
+  .fs20 {
+    font-size: 1rem;
+  }
 }
 
 .fs72 {
@@ -116,6 +142,16 @@ h6 {
 @media screen and (max-width: 479px) {
   .fs72 {
     font-size: 40px;
+  }
+}
+
+.fs200 {
+  font-size: 10.4vw;
+}
+
+@media screen and (max-width: 479px) {
+  .fs200 {
+    font-size: 120px;
   }
 }
 
@@ -201,6 +237,26 @@ h6 {
 
 .db-ib {
   display: inline-block;
+}
+
+.fs150 {
+  font-size: 7.8vw;
+}
+
+@media screen and (max-width: 479px) {
+  .fs150 {
+    font-size: 72px;
+  }
+}
+
+.mw-80 {
+  max-width: 80%;
+}
+
+@media (min-width: 1200px) {
+  .offset-lg-72 {
+    margin-left: 3.75vw;
+  }
 }
 
 .homepage {
@@ -385,6 +441,70 @@ h6 {
   font-size: 2.25rem;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.work3 {
+  background-image: url("../img/homepage/background@2x.png");
+  background-position: center 5.2vw;
+  background-repeat: no-repeat;
+  background-size: 53%;
+}
+
+@media screen and (max-width: 479px) {
+  .work3 {
+    background-position: center 50px;
+    background-size: 73%;
+  }
+}
+
+.work3 section.common-section-2 {
+  margin-left: 16.3vw;
+  margin-right: 14.3vw;
+  padding: 3.75vw 0;
+}
+
+@media screen and (max-width: 479px) {
+  .work3 section.common-section-2 {
+    margin: 0;
+    padding: 50px 0;
+  }
+}
+
+.work3 section.common-section-3 {
+  margin-left: 16.3vw;
+  margin-right: 14.3vw;
+  padding: 1.75vw 0;
+}
+
+@media screen and (max-width: 479px) {
+  .work3 section.common-section-3 {
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+.work3 section .image-table {
+  right: -10%;
+  top: 0;
+  max-width: 35%;
+}
+
+.work3 .next-work-btn {
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  .work3 .with-comma:before {
+    content: url("../img/work3/open-quote@2x.png");
+    top: 0;
+    position: absolute;
+    left: -30px;
+  }
+  .work3 .with-comma:after {
+    content: url("../img/work3/close-quote@2x.png");
+    bottom: -20px;
+    position: absolute;
+  }
 }
 
 .callout {
