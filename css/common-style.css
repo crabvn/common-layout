@@ -638,16 +638,16 @@ h6 {
 }
 
 .work3 {
-  background-image: url("../img/homepage/background@2x.png");
-  background-position: center 5.2vw;
+  background-image: url(../img/work3/background-top@2x.png), url(../img/work3/background-bottom@2x.png);
+  background-position: -45vw  -41.7vw, 62.5vw 131.9vw;
   background-repeat: no-repeat;
-  background-size: 53%;
+  background-size: 90%, 50%;
 }
 
 @media screen and (max-width: 479px) {
   .work3 {
-    background-position: center 50px;
-    background-size: 73%;
+    background-position: -180px -170px, 200px 2200px;
+    background-size: cover, cover;
   }
 }
 
@@ -698,6 +698,41 @@ h6 {
     content: url("../img/work3/close-quote@2x.png");
     bottom: -20px;
     position: absolute;
+  }
+}
+
+.work3 .i-yellow-work-3--1:after {
+  content: "";
+  width: 50vw;
+  background-color: #fff200;
+  position: absolute;
+  z-index: -1;
+  left: -35vw;
+  top: 35%;
+  height: 80px;
+}
+
+@media screen and (max-width: 479px) {
+  .work3 .i-yellow-work-3--1:after {
+    height: 50px;
+    left: -20vw;
+  }
+}
+
+.work3 .i-yellow-work-3--2:after {
+  content: "";
+  width: 100%;
+  background-color: #FFF200;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 35%;
+  height: 80px;
+}
+
+@media screen and (max-width: 479px) {
+  .work3 .i-yellow-work-3--2:after {
+    height: 50px;
   }
 }
 
