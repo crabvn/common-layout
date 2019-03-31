@@ -1,0 +1,37 @@
+.meet-the-team {
+  .section1 {
+    background-image: url(../img/meet-the-team/topimage@2x.png),url(../img/meet-the-team/background@2x.png);
+    background-position: center top,-7.8vw 12.2vw;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 85% 100%,auto 48%;
+    @include breakpoint-xs(){
+      background-position: right top,30px 20px;
+      background-size: cover;
+    }
+  }
+
+  .fullwidth-img {
+    margin-left: -2.6vw;
+    z-index: -1;
+    @include breakpoint-xs() {
+      margin-left: -16px;
+    }
+  }
+
+  .with-comma {
+    @include breakpoint($medium) {
+      &:before {
+        content: url("../img/work3/open-quote@2x.png");
+        top: -2vw;
+        position: absolute;
+        left: -2.6vw;
+      }
+
+      &:after {
+        content: url("../img/work3/close-quote@2x.png");
+        bottom: -2.6vw;
+        position: absolute;
+      }
+    }
+  }
+}

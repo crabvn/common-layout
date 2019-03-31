@@ -1,0 +1,91 @@
+.work3 {
+  background-image: url(../img/work3/background-top@2x.png),url(../img/work3/background-bottom@2x.png);
+  background-position: -45vw  -41.7vw, 62.5vw 131.9vw;
+  background-repeat: no-repeat;
+  background-size: 90%, 50%;
+  @include breakpoint-xs() {
+    background-position: -180px -170px, 200px 2200px;
+    background-size: cover, cover;
+  }
+  section {
+    &.common-section-2 {
+      margin-left: 16.3vw;
+      margin-right: 14.3vw;
+      padding: 3.75vw 0;
+      @include breakpoint-xs() {
+        margin: 0;
+        padding: 50px 0;
+      }
+    }
+
+    &.common-section-3 {
+      margin-left: 16.3vw;
+      margin-right: 14.3vw;
+      padding: 1.75vw 0;
+      @include breakpoint-xs() {
+        margin: 0;
+        padding: 20px 0;
+      }
+    }
+
+    .image-table {
+      right: -10%;
+      top: 0;
+      max-width: 35%;
+    }
+  }
+
+  .next-work-btn {
+    right: 0;
+  }
+
+  .with-comma {
+    @include breakpoint($medium) {
+      &:before {
+        content: url("../img/work3/open-quote@2x.png");
+        top: 0;
+        position: absolute;
+        left: -30px;
+      }
+
+      &:after {
+        content: url("../img/work3/close-quote@2x.png");
+        bottom: -20px;
+        position: absolute;
+      }
+    }
+  }
+
+  .i-yellow-work-3--1 {
+    &:after {
+      content: "";
+      width: 50vw;
+      background-color: #fff200;
+      position: absolute;
+      z-index: -1;
+      left: -35vw;
+      top: 35%;
+      height: 80px;
+      @include breakpoint-xs() {
+        height: 50px;
+        left: -20vw;
+      }
+    }
+  }
+
+  .i-yellow-work-3--2 {
+    &:after {
+      content: "";
+      width: 100%;
+      background-color: $yellow;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 35%;
+      height: 80px;
+      @include breakpoint-xs() {
+        height: 50px;
+      }
+    }
+  }
+}

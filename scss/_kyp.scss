@@ -1,0 +1,72 @@
+.kyp {
+  background-image: url(../img/know-your-practice/background@2x.png);
+  background-position: center -170px;
+  background-repeat: no-repeat;
+  background-size: 115%;
+  @include breakpoint-xs() {
+    background-position: left 50px;
+    background-size: cover;
+  }
+
+  .offset-kyp {
+    margin-left: 20%;
+    @include breakpoint-xs() {
+      margin-left: 0;
+    }
+  }
+
+  .our-diff {
+    &:after {
+      content: "";
+      bottom: -5vw;
+      position: absolute;
+      right: -130px;
+      height: 140px;
+      width: 140px;
+      background: url(../img/know-your-practice/yellow-curve@2x.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      @include breakpoint-xs() {
+        display: none;
+      }
+    }
+  }
+
+  .icon-box {
+    max-width: 100%;
+    @include breakpoint($medium) {
+      max-width: unset;
+      right: 0;
+      width: 42.5vw;
+      height: 42.5vw;
+    }
+  }
+
+  .our-service {
+    @include breakpoint($medium) {
+      min-height: 42.5vw;
+    }
+
+    .has-step {
+      .step {
+        @include breakpoint($not-small) {
+          left: -1.5vw;
+          top: 10.5vw;
+        }
+      }
+
+      .step-nth {
+        top: 4.8vw;
+      }
+    }
+
+    .graphics-icon {
+      top: 20vw;
+      left: 17vw;
+      @include breakpoint-xs() {
+        top: 30%;
+        left:32%;
+      }
+    }
+  }
+}
