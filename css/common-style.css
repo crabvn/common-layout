@@ -209,6 +209,12 @@ h6 {
   }
 }
 
+@media (min-width: 1200px) {
+  .mt-lg-6 {
+    margin-top: 4rem;
+  }
+}
+
 .db {
   display: block;
 }
@@ -220,6 +226,16 @@ h6 {
 @media screen and (max-width: 479px) {
   .fs42 {
     font-size: 42px;
+  }
+}
+
+.fs104 {
+  font-size: 5.4vw;
+}
+
+@media screen and (max-width: 479px) {
+  .fs104 {
+    font-size: 72px;
   }
 }
 
@@ -316,11 +332,26 @@ h6 {
   .ml-lg--3 {
     margin-left: -8vw;
   }
+  .position-lg-absolute {
+    position: absolute;
+  }
+  .overflow-lg-hidden {
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .mt-xs-3 {
     margin-top: 1.5rem;
+  }
+  .fs-xs-54 {
+    font-size: 54px;
+  }
+  .d-xs-block {
+    display: block;
+  }
+  .d-xs-none {
+    display: none;
   }
 }
 
@@ -397,6 +428,38 @@ h6 {
 .i-yellow-larger:after {
   top: 35%;
   height: 40px;
+}
+
+.i-yellow-listing {
+  padding-left: 30px;
+}
+
+.i-yellow-listing:after {
+  content: "";
+  width: 15px;
+  height: 25px;
+  background-color: #FFF200;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.i-yellow-listing-circle {
+  padding-left: 40px;
+}
+
+.i-yellow-listing-circle:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/know-your-practice/open-quote@2x.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(3deg);
+  transform: rotate(45deg);
+  background-size: 100%;
 }
 
 .common-section-full-width {
@@ -674,6 +737,90 @@ h6 {
     content: url("../img/work3/close-quote@2x.png");
     bottom: -2.6vw;
     position: absolute;
+  }
+}
+
+.kyp {
+  background-image: url(../img/know-your-practice/background@2x.png);
+  background-position: center -170px;
+  background-repeat: no-repeat;
+  background-size: 115%;
+}
+
+@media screen and (max-width: 479px) {
+  .kyp {
+    background-position: left 50px;
+    background-size: cover;
+  }
+}
+
+.kyp .offset-kyp {
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 479px) {
+  .kyp .offset-kyp {
+    margin-left: 0;
+  }
+}
+
+.kyp .our-diff:after {
+  content: "";
+  bottom: -5vw;
+  position: absolute;
+  right: -130px;
+  height: 140px;
+  width: 140px;
+  background: url(../img/know-your-practice/yellow-curve@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  .kyp .our-diff:after {
+    display: none;
+  }
+}
+
+.kyp .icon-box {
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .kyp .icon-box {
+    max-width: unset;
+    right: 0;
+    width: 42.5vw;
+    height: 42.5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .kyp .our-service {
+    min-height: 42.5vw;
+  }
+}
+
+@media (min-width: 480px) {
+  .kyp .our-service .has-step .step {
+    left: -1.5vw;
+    top: 10.5vw;
+  }
+}
+
+.kyp .our-service .has-step .step-nth {
+  top: 4.8vw;
+}
+
+.kyp .our-service .graphics-icon {
+  top: 20vw;
+  left: 17vw;
+}
+
+@media screen and (max-width: 479px) {
+  .kyp .our-service .graphics-icon {
+    top: 30%;
+    left: 32%;
   }
 }
 

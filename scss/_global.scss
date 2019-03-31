@@ -191,6 +191,12 @@ h6 {
   }
 }
 
+.mt-lg-6 {
+  @include breakpoint($large) {
+    margin-top: 4rem;
+  }
+}
+
 .db {
   display: block;
 }
@@ -200,6 +206,13 @@ h6 {
   font-size: 2.19vw;
   @include breakpoint-xs() {
     font-size: 42px;
+  }
+}
+
+.fs104 {
+  font-size: 5.4vw;
+  @include breakpoint-xs() {
+    font-size: 72px;
   }
 }
 
@@ -283,11 +296,31 @@ h6 {
   .ml-lg--3 {
     margin-left: -8vw;
   }
+
+  .position-lg-absolute {
+    position: absolute;
+  }
+
+  .overflow-lg-hidden {
+    overflow: hidden;
+  }
 }
 
-.mt-xs-3 {
-  @include breakpoint-xs() {
+@include breakpoint-xs() {
+  .mt-xs-3 {
     margin-top: 1.5rem;
+  }
+
+  .fs-xs-54 {
+    font-size: 54px;
+  }
+
+  .d-xs-block {
+    display: block;
+  }
+
+  .d-xs-none {
+    display: none;
   }
 }
 
@@ -358,7 +391,39 @@ h6 {
   }
 }
 
+.i-yellow-listing {
+  padding-left: 30px;
+  &:after {
+    content: "";
+    width: 15px;
+    height: 25px;
+    background-color: $yellow;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}
+
+.i-yellow-listing-circle {
+  padding-left: 40px;
+  &:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../img/know-your-practice/open-quote@2x.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(45deg);
+    background-size: 100%;
+  }
+}
+
 .common-section-full-width {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+
